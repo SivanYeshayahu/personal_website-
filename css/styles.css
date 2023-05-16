@@ -1,0 +1,562 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Font for all parts of the body*/
+    background-color:black;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+h4 {
+    color: #8f8f8f;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.text-3d {
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 1px 0 rgb(190,190,190), 0 2px 0 rgb(185,185,185), 0 3px 0 rgb(180,180,180), 0 4px 0 rgb(175,175,175), 0 5px 0 rgb(170,170,170), 0 6px 0 rgb(165,165,165), 0 7px 0 rgb(160,160,160), 0 1px 5px rgba(0,0,0,.05), 0 3px 5px rgba(0,0,0,.10), 0 5px 10px rgba(0,0,0,.15), 0 7px 10px rgba(0,0,0,.20), 0 10px 15px rgba(0,0,0,.25);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+    .text-3d:hover {
+        text-shadow: 0 1px 0 rgb(190,190,190), 0 2px 0 rgb(185,185,185), 0 3px 0 rgb(180,180,180), 0 4px 0 rgb(175,175,175), 0 5px 0 rgb(170,170,170), 0 6px 0 rgb(165,165,165), 0 7px 0 rgb(160,160,160), 0 8px 0 rgb(155,155,155), 0 9px 0 rgb(150,150,150), 0 1px 5px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.10), 0 10px 10px rgba(0,0,0,.15), 0 15px 10px rgba(0,0,0,.20), 0 20px 15px rgba(0,0,0,.25);
+        transform: translate(-51%,-51%);
+        transition: all 0.3s ease-in-out;
+    }
+
+
+#title {
+    background-image: url(../images/nl3.jpg);
+    background-position: center;
+    /*background-size: contain;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.profile {
+    width: 65%; /*size*/
+    /*center*/
+    display: block;
+    margin-left: 0;
+   
+}
+
+
+/* title*/
+/* lineup class and keyframes */
+.line1 {
+    margin: 10px 0px 0px 80px;
+}
+.lineUp {
+    animation: 2s anim-lineUp ease-out;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin: 10px 0px 0px 80px;
+
+}
+
+.lineUp2 {
+    animation: 2s anim-lineUp ease-out;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px 0px 80px;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.container-fluid {
+    padding: 3% 15% 7%;
+
+
+}
+
+
+/* navbar*/
+.navbar{
+    padding: 0 0 4.5rem; /* 0 beacuse its not aline*/
+}
+/*title*/
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+/*padding for each one of  nave item*/
+.nav-item{
+    padding: 0 10px;
+
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+
+.download-button{
+    margin: 5% 3% 5% 0;  /* space between button*/
+}
+
+
+
+
+/******************************NEW SECTION********************************************/
+/* about section*/
+#about {
+    padding: 7% 15%;
+    /*background-color: white;*/
+    position: relative; /* now will be on top of others*/
+    z-index: 1;
+}
+.img2 {
+    width: 25%; /*size*/
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+.about-box{
+    text-align: center;
+    padding: 5%; /* WAS 4.5*/
+
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+
+}
+.icon:hover{
+    color: #ff4c68;
+}
+
+/*************************************Projects & skills ************************************/
+
+
+/***************************************Projects*******************************************************************/
+a{
+    color:white;
+}
+
+
+#projects{
+    /*text-align:center;*/
+}
+
+.img1 {
+    width: 22%; /*size*/
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+.t {
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 300px;
+    min-height: 250px;
+      background-color: hsla(40, 100%, 6%, 0.6);
+    padding: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #FFF;
+    margin: 20px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+
+    .card:nth-child(2) {
+        background-color: hsla(40, 100%, 6%, 0.6);
+    }
+
+    .card:last-child {
+        background-color: hsla(40, 100%, 6%, 0.6);
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 24px;
+    }
+
+.card-title {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.card-content {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+.card-btn {
+    all: unset;
+    display: block;
+    margin-left: auto;
+    border: 2px solid #FFF;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+}
+
+    .card-btn:hover {
+        color: #02b875;
+        background: #FFF;
+    }
+
+.card:nth-child(2) .card-btn:hover {
+    color: #4181ee;
+    background: #FFF;
+}
+
+.card:last-child .card-btn:hover {
+    color: #673ab7;
+    background: #FFF;
+}
+
+
+
+/*************************************************skills**************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+$main-color: #002733;
+$dark-color: #001925;
+$light-color: #87A4B6;
+$medium-light-color: #013747;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.lan {
+    width: 80%;
+    object-fit: cover;
+    height: 80%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0px auto 0px auto;
+    padding: 0px 40px;
+    // border: 1px solid yellow;
+    text-align:center;
+    
+
+    @media (min-width: 1200px) and (max-width: 1441px) {
+        max-width: 1250px;
+        padding: 0px 36px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0px 30px;
+    }
+
+    @media (max-width: 479px) {
+        padding: 0px 30px 0px 20px;
+    }
+}
+
+
+.skills {
+    padding: 50px 0px;
+.skills-flex-container
+
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 80%;
+    position: center;
+    padding: 10px;
+    margin: auto;
+
+    @media(max-width:700px) {
+        gap: 30px;
+    }
+
+    .box
+
+{
+    flex: 1 1 15%;
+    /*background: $dark-color;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 24px;
+        */
+    padding: 25px;
+    text-align: center;
+  
+   /* border: 10px solid $medium-light-color;*/
+    transition: all 0.3s ease-in;
+    // border-radius: 60% 33% 26% 67% / 51% 62% 28% 41%;
+    .image
+
+{
+    transition: all 0.3s ease-in-out 0.1s;
+    img
+
+{
+    max-width: 75px;
+    object-fit: contain;
+}
+
+}
+
+.title {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+&:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+    transform: scale(1.1);
+    
+    .image
+
+{
+    transform: scale(1.5) translateY(-20px);
+    img
+
+{
+    animation: bouncing 0.5s .3s;
+}
+
+}
+
+.title {
+    letter-spacing: 2px;
+}
+
+}
+
+@media(max-width:1100px) {
+    flex: 1 0 25%;
+}
+
+@media(max-width:630px) {
+    flex: 1 0 35%;
+    padding: 15px;
+    .image {
+        img
+
+{
+    max-width: 50px;
+}
+
+}
+}
+}
+}
+}
+
+@keyframes bouncing {
+    from, to {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*************************footer section*******************************************************************/
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+    margin-top: 0px;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    background-size: cover;
+}
+.footer{
+}
+
+.fo {
+    display: flex;
+}
+
+.fo .f {
+        position: center;
+        display: block;
+        color: #666;
+        font-size: 30px;
+        height: 60px;
+        width: 60px;
+        background: #171515;
+        line-height: 60px;
+        border-radius: 50%;
+        margin: 0 15px;
+        cursor: pointer;
+        transition: .5s;
+ }
+ 
+.fo .f:before {
+            position: center;
+            content: '';
+            top: 0;
+            left: 0;
+            height: inherit;
+            width: inherit;
+            background: #d35400;
+            border-radius: 50%;
+            transform: scale(.9);
+            z-index: -1;
+            transition: .5s;
+}
+
+ .fo .f:nth-child(1):before {
+            background: #4267B2;
+ }
+
+.fo .f:nth-child(2):before {
+        background: #1DA1F2;
+ }
+
+
+.fo .f:nth-child(3):before {
+        background: #ff0000;
+ }
+
+.fo .f:hover:before {
+        filter: blur(3px);
+        transform: scale(1.2);
+        box-shadow: 0 0 15px #d35400;
+}
+
+ .fo .f:nth-child(1):hover:before {
+        box-shadow: 0 0 15px #4267B2;
+  }
+
+.fo .f:nth-child(2):hover:before {
+        box-shadow: 0 0 15px #1DA1F2;
+ }
+
+
+ fo .f:nth-child(3):hover:before {
+        box-shadow: 0 0 15px #ff0000;
+  }
+
+.fo .f:nth-child(1):hover {
+        color: #456cba;
+        box-shadow: 0 0 15px #4267B2;
+        text-shadow: 0 0 15px #4267B2;
+}
+
+ .fo .f:nth-child(2):hover {
+        color: #26a4f2;
+        box-shadow: 0 0 15px #1DA1F2;
+        text-shadow: 0 0 15px #1DA1F2;
+  }
+
+    
+ .fo .f:nth-child(3):hover {
+            color: #ff1a1a;
+            box-shadow: 0 0 15px #ff0000;
+            text-shadow: 0 0 15px #ff0000;
+   }
+/*
+ul li:hover{
+  color: #ffa502;
+  box-shadow: 0 0 15px #d35400;
+  text-shadow: 0 0 15px #d35400;
+} 
+*/
+
+
+
+
+/*******************************************************************************************/
+/*media query (mmobile friendly)*/
+@media(max-width: 1032px) {
+    #title{
+        text-align:center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 50%; /* i add*/
+    }
+}
+
